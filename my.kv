@@ -1,0 +1,35 @@
+WindowManger:
+    Login:
+    SecondWindow:
+
+
+<Login>:
+    profile_file:profile_file
+    etmp_file:etmp_file
+    name: "login"
+
+    GridLayout:
+
+        cols: 1
+        GridLayout:
+            cols: 2
+            Label:
+                text:"profile location"
+            TextInput:
+                id:profile_file
+                multinline:False
+            Label:
+                text:"modpack file and location"
+            TextInput:
+                id:etmp_file
+                multinline:False
+        Button:
+            text: "Login"
+            on_press:root.btn()
+
+
+
+
+<SecondWindow>:
+    name: "second"
+
