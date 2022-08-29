@@ -4,12 +4,19 @@ WindowManger:
 
 
 <Login>:
+    GridLayout:
+        cols: 3
+        image
+        Label:
+        Button:
+
+
+
+
+<SecondWindow>:
     profile_file:profile_file
     etmp_file:etmp_file
-    name: "login"
-
     GridLayout:
-
         cols: 1
         GridLayout:
             cols: 2
@@ -25,11 +32,5 @@ WindowManger:
                 multinline:False
         Button:
             text: "Login"
-            on_press:root.btn()
 
-
-
-
-<SecondWindow>:
-    name: "second"
 
